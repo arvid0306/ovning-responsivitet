@@ -4,13 +4,34 @@
     width: 90%;                               /*gör att sectionen täcker 90% av sidan i sidled*/
     max-width: 300px;                         /*gör att sectionen inte går att dra ut större än 300px*/
     aspect-ratio: 3/2;                        /*gör att höjden anpassar sig efter bredden efter ration 3 bredd 2 höjd*/
+    display: flex;                            /*gör att sectionen blir till en flexbehållare*/
+    justify-content: center;                    /*centrerar vågrätt*/
+    align-items: center;                        /*centrerar lodrätt*/
 }
 .circle{
     height: 100%;                           /*höjden är 100% av den övre sectionens höjd*/
     aspect-ratio: 1/1;                      /*ration är 1 bred och 1 höjd oavsett hur du drar ut den*/
-    max-width: 100%;                        /*max bredd blir 100%*/
     background-color: yellow;            /*bakgrundsfärg*/
     border: 3px solid gold;                 /*storlek och färg på kant samt typ av kant*/
-    margin: 0 auto;                           /*första siffran visar sectionen centreras horizontellt och auto betyder att den hamnar i centrum*/
     border-radius: 100%;                     /*gör att rundningen på kanterna blir så pass runda att den blir en cirkel*/
+}
+.over, .under{
+    display: flex;                          /*gör att sectionerna inuti dessa lägger sig bredvid varandra och inte ovanpå*/
+    width: 100%;                            /*täcker hela sidans bredd*/
+    height: 50vh;                           /*ställer höjden till 50% av viewport height, alltså 50% av höjden av sidan du ser oavsett storlek*/
+}
+.red, .blue, .green, .yellow{
+    width: 50%;                             /*bredden för varje enskild färg. I detta fallet 50% av sidans bredd*/
+}
+.red{
+    background-color: red;          
+}
+.blue{
+    background-color: blue;       
+}
+.green{
+    background-color: green;         
+}
+.yellow{
+    background-color: yellow;      
 }
