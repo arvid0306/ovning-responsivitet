@@ -1,0 +1,16 @@
+.box{
+    background-color: cornflowerblue;       /*bakgrundsfärg*/
+    border: 3px solid darkblue;             /*storlek och färg på kant samt typ av kant*/
+    width: 90%;                               /*gör att sectionen täcker 90% av sidan i sidled*/
+    max-width: 300px;                         /*gör att sectionen inte går att dra ut större än 300px*/
+    aspect-ratio: 3/2;                        /*gör att höjden anpassar sig efter bredden efter ration 3 bredd 2 höjd*/
+}
+.circle{
+    height: 100%;                           /*höjden är 100% av den övre sectionens höjd*/
+    aspect-ratio: 1/1;                      /*ration är 1 bred och 1 höjd oavsett hur du drar ut den*/
+    max-width: 100%;                        /*max bredd blir 100%*/
+    background-color: yellow;            /*bakgrundsfärg*/
+    border: 3px solid gold;                 /*storlek och färg på kant samt typ av kant*/
+    margin: 0 auto;                           /*första siffran visar sectionen centreras horizontellt och auto betyder att den hamnar i centrum*/
+    border-radius: 100%;                     /*gör att rundningen på kanterna blir så pass runda att den blir en cirkel*/
+}
